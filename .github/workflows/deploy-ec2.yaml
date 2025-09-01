@@ -17,3 +17,6 @@ jobs:
             echo "Hello, World!"
             ls -la
             pwd
+        - uses: hashicorp/setup-terraform@v3
+
+        - run: terraform version 
