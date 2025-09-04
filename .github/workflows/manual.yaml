@@ -1,0 +1,10 @@
+# .github/workflows/manual.yml
+name: Manual Workflow
+on:
+  workflow_dispatch:   # run manually from Actions tab
+
+jobs:
+  manual-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This workflow runs only when triggered manually"
