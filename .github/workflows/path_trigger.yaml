@@ -1,0 +1,12 @@
+# .github/workflows/docs.yml
+name: Docs Check
+on:
+  push:
+    paths:
+      - "docs/**"   # run only if files under docs/ change
+
+jobs:
+  docs-check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Docs updated"
